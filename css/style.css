@@ -1,0 +1,284 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* --------------------------------
+   GENERAL PAGE
+-------------------------------- */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+}
+
+
+/* --------------------------------
+   HEADER
+-------------------------------- */
+
+header {
+    background-color: #263238;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 42px;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+
+/* --------------------------------
+   MAIN CONTENT
+-------------------------------- */
+
+main {
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+main h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+
+/* --------------------------------
+   SUBJECT BUTTONS
+-------------------------------- */
+
+.buttons {
+    text-align: center;
+}
+
+button {
+    width: 400px;
+    padding: 18px;
+    margin: 10px;
+    font-size: 18px;
+    background-color: white;
+    color: #222;
+    border: 2px solid #263238;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #e8eef1;
+    border-color: #263238;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 600px) {
+
+    button {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+}
+
+/* --------------------------------
+   FOOTER
+-------------------------------- */
+
+footer {
+    text-align: center;
+    color: #777;
+    padding: 30px;
+    margin-top: 60px;
+}
+
+/* --------------------------------
+   CONTENT
+-------------------------------- */
+.content {
+    width: 90%
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.content p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.content h2 {
+    font-size: 28px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.content h3 {
+    font-size: 21px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.content h4 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.content h5 {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.content ul,
+.content ol {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 5px;
+}
+
+.content li {
+    margin-bottom: 5px;
+}
+
+/* ------------------Tables ----------------------*/
+
+.content table {
+    width: auto;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+.content th,
+.content td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+}
+
+.content th {
+    background-color: #e8eef1;
+    font-weight: bold;
+}
+
+/* -------------------Images-------------------- */
+
+figure {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.content figure img {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.content figure img:hover {
+    opacity: 0.85;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* ----------------------Callout-------------------- */
+
+.callout {
+    background-color: #e8eef1;
+    border-left: 5px solid #263238;
+    padding: 20px;
+    margin: 30px 0;
+}
+
+.callout-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.callout p {
+    margin-bottom: 0;
+}
+
+.callout.important {
+    border-left: 5px solid #555;
+}
+
+.callout.exam-tip {
+    border-left: 5px solid #777;
+}
+
+/*----------------------Table of Contents-------------------*/
+
+.table-of-contents {
+    background-color: #f4f6f7;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 30px 0;
+}
+
+.toc-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.table-of-contents ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.table-of-contents li {
+    margin-bottom: 6px;
+}
+
+/*--------------------------Image Gallery---------------------*/
+
+.image-gallery {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.image-gallery figure {
+    flex: 1;
+    margin: 0;
+}
+
+.image-gallery img {
+    width: 300px;
+    height: 200px;
+}
+
+.cytology-image {
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .image-gallery {
+        flex-direction: column;
+    }
+}
